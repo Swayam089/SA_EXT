@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV ELEMENT</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <center><table>
+        <tr>
+            <td>
+                <img src="favicon.png" width="50">
+            </td>
+            <td><h1>Book Suggestions</h1></td>
+        </tr>
+    </table></center>
+    <nav><a id="navbtn" href="Fiction.html">Fiction</a><a id="navbtn" href="Non-fiction.html">Non - Fiction</a><a id="navbtn" href="mystry.html">MYSTERY</a><a id="navbtn" href="index.html">Home</a></nav>
+    <div class="myDiv">
+        <h2>Please Fill the fields </h2>
+        <p>We will require the data incase the orders and more inquiry</p>
+        <center>
+            <div class="form">
+                <form>
+                    <label class="Author" for="Author" id="author">Author</label><br>
+                    <input type="text" id="Author"><br><br>
+                    <label class="Book-Name" for="Book-Name">Book Name</label><br>
+                    <input type="text" id="BookName"><br><br>
+                    <label class="Genre" for="Genre">Genre</label><br>
+                    <input type="text" id="Genre"><br><br>
+                    <label class="DATE" for="DATE">Date of publication</label><br>
+                    <input type="text" id="Date"><br><br>
+                    <label class="Number" for="Number">Number of Pages</label><br>
+                    <input type="text" id="Number"><br><br>
+                    <input type="button" value="Sumbit" id="Button">
+                </form>
+            </div>
+        </center>
+        <script>
+            document.getElementById("Button").onclick = function () {
+                alert('You have Requested For Book of ' + document.getElementById('Number').value + ' Pages from the Author ' + document.getElementById('Author').value + ' and the Books name is ' + document.getElementById('BookName').value + ' and it was published in ' + document.getElementById('Date').value + ' Thank you for the Suggestion we will surely look after this request :)')
+                location.href ='https://swayam089.github.io/DD_EXT_SA/index.html';
+            };
+        </script>
+</body>
+
+</html>
